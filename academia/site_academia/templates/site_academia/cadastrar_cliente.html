@@ -1,0 +1,51 @@
+{% extends 'site_academia/base.html' %}
+
+{% block title %}Cadastro - SKYHARD GYM{% endblock %}
+
+{% block content %}
+  <main>
+    <h1>Cadastro</h1>
+
+    {% if messages %}
+      <ul class="messages">
+        {% for message in messages %}
+          <li class="{{ message.tags }}">{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    <form method="post" class="form-container">
+      {% csrf_token %}
+
+      {% for field in form %}
+        <div class="form-group">
+          <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+          {{ field }}
+          {% if field.help_text %}
+            <small class="help-text">{{ field.help_text }}</small>
+          {% endif %}
+          {% for error in field.errors %}
+            <p class="error-message">{{ error }}</p>
+          {% endfor %}
+        </div>
+      {% endfor %}
+
+      <div class="form-group">
+        <button type="submit" class="btn-primary">Cadastrar</button>
+      </div>
+    </form>
+
+    <p>Já tem uma conta? <a href="{% url 'login' %}">Faça login</a></p>
+  </main>
+
+  <script>
+    function togglePassword(id) {
+        var input = document.getElementById(id);
+        if (input.type === "password") {
+            input.type = "text";
+        } else {
+            input.type = "password";
+        }
+    }
+  </script>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends 'site_academia/base.html' %}
+{% load static %}
+{% block title %}Nossos Plano - SKYHARD GYM!{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Nossos Plano</h1>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="{% static 'images/basico.jpeg' %}" class="card-img-top" alt="Plano Básico">
+
+                <div class="card-body">
+                    <h5 class="card-title">Plano Básico</h5>
+                    <p class="card-text">Plano ideal para aqueles que estão começando no treinamento e deseja uma opção acessível.</p>
+                    <p class="card-text"><strong>Preço:</strong> R$ 79,90/mês</p>
+                    <a href="#" class="btn btn-primary">Assine Agora</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="{% static 'images/intermediário.jpeg' %}" class="card-img-top" alt="Plano Intermediário">
+                <div class="card-body">
+                    <h5 class="card-title">Plano Intermediário</h5>
+                    <p class="card-text">Para quem já tem alguma experiência e quer um treinamento mais avançado.</p>
+                    <p class="card-text"><strong>Preço:</strong> R$ 99,90/mês</p>
+                    <a href="#" class="btn btn-primary">Assine Agora</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="{% static 'images/avançado.jpeg' %}" class="card-img-top" alt="Plano Avançado">
+                <div class="card-body">
+                    <h5 class="card-title">Plano ESSENTIAL</h5>
+                    <p class="card-text">Para quem já possui alto nível de condicionamento físico e quer alcançar novos resultados.</p>
+                    <p class="card-text"><strong>Preço:</strong> R$ 149,90/mês</p>
+                    <a href="#" class="btn btn-primary">Assine Agora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

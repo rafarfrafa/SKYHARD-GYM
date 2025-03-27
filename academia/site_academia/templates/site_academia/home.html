@@ -1,0 +1,28 @@
+{% extends 'site_academia/base.html' %}
+
+{% load static %} 
+
+{% block title %}Home - SKYHARD GYM!{% endblock %}
+
+{% block content %}
+<section id="home">
+    <h1>Bem-vindo à SKYHARD GYM!</h1>
+    
+    <img src="{% static 'images/treino1.png' %}" alt="Treino especializado" width="600">
+    <a href="{% url 'sobre' %}" class="saiba-mais">Saiba mais sobre nós</a>
+</section>
+
+<section id="clientes">
+    <h2>Clientes Cadastrados</h2>
+    {% if clientes %}
+        <ul>
+            {% for cliente in clientes %}
+                <li>{{ cliente.nome_completo }} - {{ cliente.email }} - Plano: {{ cliente.Plano }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Não há clientes cadastrados.</p>
+    {% endif %}
+</section>
+
+{% endblock %}

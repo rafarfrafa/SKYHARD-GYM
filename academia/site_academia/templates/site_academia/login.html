@@ -1,0 +1,30 @@
+{% extends 'site_academia/base.html' %}
+
+{% block title %}Login - SKYHARD GYM{% endblock %}
+
+{% block content %}
+  <main>
+    <h1>Login</h1>
+
+    {% if messages %}
+      <ul class="messages">
+        {% for message in messages %}
+          <li class="{{ message.tags }}">{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    {% if user.is_authenticated %}
+      <p>Você já está logado como <strong>{{ user.username }}</strong>. <a href="{% url 'plano' %}">Ver planos</a></p>
+    {% else %}
+      <form method="post" class="form-container">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="form-group">
+          <button type="submit" class="btn-primary">Entrar</button>
+        </div>
+      </form>
+      <p>Não tem uma conta? <a href="{% url 'cadastro' %}">Cadastre-se</a></p>
+    {% endif %}
+  </main>
+{% endblock %}
