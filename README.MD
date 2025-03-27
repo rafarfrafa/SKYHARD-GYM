@@ -20,7 +20,7 @@ Coming Soon!
 
 ### Banco de Dados
 ```sql
-CREATE DATABASE db_skyhardgym
+CREATE DATABASE db_academia
 ```
 
 
