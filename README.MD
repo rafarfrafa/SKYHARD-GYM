@@ -31,4 +31,4 @@ CREATE DATABASE db_academia
 "# SKYHARD-GYM" 
 "# SKYHARD-GYM" 
 
-Pagina inicial: https://raw.githubusercontent.com/rafarfrafa/SKYHARD-GYM/refs/heads/main/evercapture_20-04-2025_at_12-09-30.png
+![Tela inicial do projeto](https://raw.githubusercontent.com/rafarfrafa/SKYHARD-GYM/refs/heads/main/evercapture_20-04-2025_at_12-09-30.png?raw=true)
