@@ -30,3 +30,5 @@ CREATE DATABASE db_academia
 "# SKYHARD-GYM" 
 "# SKYHARD-GYM" 
 "# SKYHARD-GYM" 
+
+Pagina inicial: https://github.com/rafarfrafa/SKYHARD-GYM/blob/main/evercapture_20-04-2025_at_12-09-30.png
