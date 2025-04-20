@@ -23,10 +23,6 @@ Coming Soon!
 CREATE DATABASE db_academia
 ```
 
-
-## 🌐 Fluxograma
-
-![Coming Soon!]()
 "# SKYHARD-GYM" 
 "# SKYHARD-GYM" 
 "# SKYHARD-GYM" 
